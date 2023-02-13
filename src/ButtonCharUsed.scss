@@ -1,0 +1,30 @@
+$bg-light: white;
+$border: Gainsboro;
+$blue: DarkSlateBlue;
+
+.button-parameters {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80px;
+    height: 30px;
+    border: none;
+    padding: 0 14px;
+    border-radius: 20px;
+    text-align: right;
+    background-color: $border;
+
+    .icon-button {
+        margin-right: auto;
+    }
+}
+
+.selected {
+    outline: 1pt solid $blue;
+    background-color: $bg-light;
+
+    div {
+        color: $blue;
+    }
+}

@@ -1,0 +1,20 @@
+$bg-light: white;
+$bg-app: GhostWhite;
+$border: Gainsboro;
+$blue: DarkSlateBlue;
+$app-width: 480px;
+$h-bar: 12px;
+$gap: 10px;
+
+@mixin flex-center {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin button-rounded {
+    border-radius: 100%;
+    box-shadow: 0 0 0 1px $border;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+@import './mixins.scss';
+
+.input-password-generated {
+    width: 70%;
+    box-shadow: 0 0 0 1px $border;
+    border-radius: 18px;
+    font-size: 12pt;
+    padding: 8pt 10pt;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

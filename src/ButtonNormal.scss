@@ -1,0 +1,10 @@
+@import './mixins.scss';
+
+.button-normal {
+    @include flex-center();
+    @include button-rounded();
+    width: 40px;
+    height: 40px;
+    padding: 8pt;
+    font-size: 12pt;
+}

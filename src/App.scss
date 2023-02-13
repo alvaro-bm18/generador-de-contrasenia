@@ -1,0 +1,134 @@
+@import './mixins.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+input,
+button {
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    outline: 1pt solid $blue;
+}
+
+#root {
+    @include flex-center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-app;
+}
+
+.app-container {
+    flex-flow: column nowrap;
+    width: $app-width;
+    height: fit-content;
+    background-color: $bg-light;
+    box-shadow: 0 0 0 1px $border;
+    padding: 20px 40px 40px;
+    border-radius: 4pt;
+    overflow: hidden;
+
+    .title-app{
+        color: $blue;
+        font-family: sans-serif;
+        padding-bottom: 40px;
+    }
+}
+
+.security-level-message {
+    @include flex-center();
+    flex-flow: column nowrap;
+
+    .icon-security-level {
+        text-align: center;
+        font-size: 48pt;
+        color: rgba($color: black, $alpha: 0.4);
+    }
+
+    p[class^="pass"] {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: $gap;
+        width: fit-content;
+        height: fit-content;
+        font-family: sans-serif;
+        padding: 10px;
+        border-radius: $gap;
+        box-shadow: 0 0 2pt 0 $border;
+        margin: 20px 0 30px;
+
+        span {
+            padding: 4px 8px;
+            border-radius: $gap;
+            box-shadow: 0 0 2pt 0 $border;
+            color: black;
+            background-color: $bg-light;
+        }
+    }
+
+    p[class$="bad"] {
+        color: $bg-light;
+        background-color: tomato;
+    }
+
+    p[class$="weak"] {
+        color: $bg-light;
+        background-color: darkorange;
+    }
+
+    p[class$="ok"] {
+        background-color: yellow;
+    }
+
+    p[class$="better"] {
+        color: $bg-light;
+        background-color: green;
+    }
+
+    p[class$="best"] {
+        color: $bg-light;
+        background-color: $blue;
+    }
+}
+
+.inputPassword {
+    @include flex-center();
+    gap: $gap;
+    padding-bottom: 20px;
+}
+
+.range-bar-length {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    .control-range {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: $gap;
+    }
+}
+
+.options-buttons {
+    position: relative;
+    display: flex;
+    gap: $gap * 2;
+    justify-content: center;
+}

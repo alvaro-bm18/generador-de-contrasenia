@@ -1,0 +1,39 @@
+@import './mixins.scss';
+
+.range-container {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    background-color: $border;
+
+    #lenPassword,
+    .bar-range {
+        display: block;
+        height: $h-bar;
+        border-radius: 8px;
+    }
+
+    #lenPassword {
+        position: relative;
+        display: block;
+        appearance: none;
+        width: 240px;
+        z-index: 100;
+        background-color: transparent;
+    }
+
+    #lenPassword::-moz-range-thumb {
+        width: $h-bar * 2;
+        height: $h-bar * 2;
+        @include button-rounded;
+    }
+
+    .bar-range {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1%;
+        height: $h-bar;
+        background-color: $blue;
+    }
+}
