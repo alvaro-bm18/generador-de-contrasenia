@@ -1,3 +1,4 @@
+import React from 'react';
 import './InputPass.scss';
 export default function InputPassword({val}) {
     return (

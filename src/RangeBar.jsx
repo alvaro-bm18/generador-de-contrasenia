@@ -1,3 +1,4 @@
+import React from 'react';
 import './RangeBar.scss';
 export default function RangeBar({ min, max, value, change }) {
     return (

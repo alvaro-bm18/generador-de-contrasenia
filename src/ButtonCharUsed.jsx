@@ -1,3 +1,4 @@
+import React from 'react';
 import './ButtonCharUsed.scss';
 export default function ButtonCharUsed({ click, classBtn, text, children }) {
     return (

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 input {
@@ -41,9 +42,9 @@ button:active {
     border-radius: 4pt;
     overflow: hidden;
 
-    .title-app{
+    .title-app {
+        text-align: center;
         color: $blue;
-        font-family: sans-serif;
         padding-bottom: 40px;
     }
 }

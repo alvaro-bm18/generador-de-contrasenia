@@ -1,3 +1,4 @@
+import React from 'react';
 import './ButtonNormal.scss';
 
 export default function ButtonNormal({ click, children }) {

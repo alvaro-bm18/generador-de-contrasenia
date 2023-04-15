@@ -17,7 +17,7 @@ import RangeBar from "./RangeBar";
 import ButtonNormal from "./ButtonNormal";
 import InputPassword from "./InputPassword";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import './App.scss';
 
 export default function App() {
